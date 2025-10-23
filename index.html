@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&#127967;&#65039; EventXpert | Tampa Bay Sports Hub</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Botpress Chat Bubble -->
+  <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js" defer></script>
+  <script src="https://files.bpcontent.cloud/2025/10/19/18/20251019182617-TNXHR4Z3.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">&#127967;&#65039; EventXpert</div>
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="data.html">Data Visualization</a>
+      <a href="crud.html">Manage Events</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero fade-in">
+      <h1>Tampa Bay Sports Events & Tickets</h1>
+      <p>Your single hub for USF Bulls, Buccaneers, Lightning & Rowdies updates.</p>
+    </section>
+
+    <!-- Logo Carousel -->
+    <section class="logos-section fade-in">
+      <h2 class="section-title">Featured Teams</h2>
+      <div class="logo-carousel">
+        <div class="logo-track">
+          <div class="logo-item"><img src="img/usf.png" alt="USF Bulls"><span>USF Bulls</span></div>
+          <div class="logo-item"><img src="img/bucs.png" alt="Tampa Bay Buccaneers"><span>Buccaneers</span></div>
+          <div class="logo-item"><img src="img/lightning.png" alt="Tampa Bay Lightning"><span>Lightning</span></div>
+          <div class="logo-item"><img src="img/rowdies.png" alt="Tampa Bay Rowdies"><span>Rowdies</span></div>
+          <div class="logo-item"><img src="img/usf.png" alt="USF Bulls"><span>USF Bulls</span></div>
+          <div class="logo-item"><img src="img/bucs.png" alt="Tampa Bay Buccaneers"><span>Buccaneers</span></div>
+          <div class="logo-item"><img src="img/lightning.png" alt="Tampa Bay Lightning"><span>Lightning</span></div>
+          <div class="logo-item"><img src="img/rowdies.png" alt="Tampa Bay Rowdies"><span>Rowdies</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features fade-in">
+      <div class="card">
+        <h3>Local Focus</h3>
+        <p>Clean schedules and ticket insights for Tampa Bay fans.</p>
+      </div>
+      <div class="card">
+        <h3>Smart Assistant</h3>
+        <p>Chat with EventXpert for dates, venues and prices instantly.</p>
+      </div>
+      <div class="card">
+        <h3>Interactive Charts</h3>
+        <p>Visualize trends across teams, venues and ticket ranges.</p>
+      </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="events-preview fade-in">
+      <h2 class="section-title">Upcoming Events</h2>
+      <p class="events-desc">Explore live Tampa Bay match schedules — these events power the chatbot and analytics dashboards.</p>
+
+      <table class="events-table">
+        <thead>
+          <tr>
+            <th>Match</th>
+            <th>Date</th>
+            <th>Venue</th>
+            <th>Price ($)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>USF Bulls vs UCF Knights</td><td>Oct 25, 2025</td><td>USF Stadium</td><td>30</td></tr>
+          <tr><td>Buccaneers vs Saints</td><td>Nov 2, 2025</td><td>Raymond James Stadium</td><td>80</td></tr>
+          <tr><td>Tampa Bay Lightning vs Hurricanes</td><td>Nov 6, 2025</td><td>Amalie Arena</td><td>60</td></tr>
+          <tr><td>USF Volleyball vs Miami</td><td>Nov 10, 2025</td><td>Yuengling Center</td><td>22</td></tr>
+          <tr><td>Rowdies vs Orlando City</td><td>Nov 14, 2025</td><td>Al Lang Stadium</td><td>35</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 &#127967;&#65039; EventXpert • ISM6225 | University of South Florida</p>
+  </footer>
+
+  <button id="topBtn">&#8593;</button>
+  <script>
+    const btn = document.getElementById("topBtn");
+    window.onscroll = () => { btn.style.display = (window.scrollY > 250) ? "block" : "none"; };
+    btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  </script>
+</body>
+</html>
