@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - EventXpert</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2e0e9b6d3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">EventXpert</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="data.html">Data Visualization</a>
+      <a href="crud.html">Manage Events</a>
+      <a href="about.html" class="active">About Us</a>
+    </nav>
+  </header>
+
+  <main class="about-container">
+    <section class="intro">
+      <h2>About Our Team - EventXpert</h2>
+      <p><strong>EventXpert</strong> is a sports-event web platform focused on Tampa Bay teams, combining an AI chatbot and interactive data visualizations. 
+      Built for ISM6225 (Fall 2025), it demonstrates web design, analytics, and Botpress integration.</p>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+      <div class="team-card">
+        <h3>Arnav Mohite</h3>
+        <p><strong>U04619012</strong></p>
+        <p><a href="mailto:amohite@usf.edu"><i class="fas fa-envelope"></i> amohite@usf.edu</a></p>
+      </div>
+      <div class="team-card">
+        <h3>Kajal Sharma</h3>
+        <p><strong>U43213339</strong></p>
+        <p><a href="mailto:kajalsharma@usf.edu"><i class="fas fa-envelope"></i> kajalsharma@usf.edu</a></p>
+      </div>
+      <div class="team-card">
+        <h3>Raees Parkar</h3>
+        <p><strong>U03588639</strong></p>
+        <p><a href="mailto:rparkar@usf.edu"><i class="fas fa-envelope"></i> rparkar@usf.edu</a></p>
+      </div>
+      <div class="team-card">
+        <h3>Kushal Reddy</h3>
+        <p><strong>U66097544</strong></p>
+        <p><a href="mailto:ksingaram@usf.edu"><i class="fas fa-envelope"></i> ksingaram@usf.edu</a></p>
+      </div>
+    </section>
+
+    <!-- Data Schema -->
+    <section class="schema-section">
+      <h2>Data Schema Overview</h2>
+      <div class="schema-box">
+        <h3>SPORTS_EVENT</h3>
+        <ul>
+          <li>&bull; Match (text)</li>
+          <li>&bull; Date (text)</li>
+          <li>&bull; Venue (text)</li>
+          <li>&bull; Price (text)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Logical Data Model -->
+    <section class="er-diagram">
+      <h2>Logical Data Model (ER Diagram)</h2>
+      <div class="er-box">
+        <div class="entity">
+          <h4>Team</h4>
+          <p>PK: TeamID</p>
+          <p>Name, League</p>
+        </div>
+        <div class="entity">
+          <h4>Event</h4>
+          <p>PK: EventID</p>
+          <p>FK: TeamID -&gt; Team</p>
+          <p>FK: VenueID -&gt; Venue</p>
+          <p>Date, Price</p>
+        </div>
+        <div class="entity">
+          <h4>Venue</h4>
+          <p>PK: VenueID</p>
+          <p>Name, Location, Capacity</p>
+        </div>
+        <div class="relationship">
+          <p>Team -&gt; Event (1:N)</p>
+          <p>Venue -&gt; Event (1:N)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 EventXpert | ISM6225 | University of South Florida</p>
+  </footer>
+
+  <!-- Botpress Chat -->
+  <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js" defer></script>
+  <script src="https://files.bpcontent.cloud/2025/10/19/18/20251019182617-TNXHR4Z3.js" defer></script>
+</body>
+</html>
